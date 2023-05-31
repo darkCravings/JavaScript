@@ -1,14 +1,15 @@
 function maxNumber(input) {
 
-    let i = 0;
     let max = Number(input.shift());
+    let index = 0;
+    let number = 0;
 
-    while (input[i] !== 'Stop') {
-        let number = Number(input[i]);
+    while (input[index] !== 'Stop') {
+        number = Number(input[index]);
         if (number > max) {
             max = number;
         }
-        i++;
+        index++;
     }
     console.log(max);
 }
