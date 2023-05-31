@@ -1,13 +1,13 @@
 function moving(input) {
 
-    let index = 3;
+    let [takenSpace, index] = [0, 3];
     let width = Number(input[0]);
     let length = Number(input[1]);
     let height = Number(input[2]);
     let volume = width * length * height;
 
     while (input[index] !== 'Done') {
-        let takenSpace = Number(input[index]);
+        takenSpace = Number(input[index]);
         volume -= takenSpace;
 
         if (volume <= 0) {
