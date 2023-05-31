@@ -1,12 +1,13 @@
 function cake(input) {
 
     let index = 2;
+    let takenPieces = 0;
     let width = Number(input[0]);
     let length = Number(input[1]);
     let totalPieces = width * length;
 
     while (input[index] !== 'STOP') {
-        let takenPieces = Number(input[index]);
+        takenPieces = Number(input[index]);
         totalPieces -= takenPieces;
 
         if (totalPieces <= 0) {
