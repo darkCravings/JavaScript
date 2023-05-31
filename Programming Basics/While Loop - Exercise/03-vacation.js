@@ -2,15 +2,16 @@ function vacation(input) {
 
     let vacationMoney = Number(input[0]);
     let accountBalance = Number(input[1]);
+    let operation = '';
+    let transaction = 0;
     let countDays = 0;
     let countSpendDays = 0;
     let index = 2;
 
-
     while (accountBalance < vacationMoney) {
 
-        let operation = input[index];
-        let transaction = Number(input[index + 1]);
+        operation = input[index];
+        transaction = Number(input[index + 1]);
         index += 2;
         countDays++;
 
