@@ -1,12 +1,12 @@
 function readText(input) {
 
     let index = 0;
-    let word = input[0];
+    let word = '';
 
-    while (word !== 'Stop') {
+    while (input[index] !== 'Stop') {
+        word = input[index];
         console.log(word);
         index++;
-        word = input[index];
     }
 }
 
@@ -18,4 +18,4 @@ readText(["Nakov",
     "Stop",
     "AfterStop",
     "Europe",
-    "HelloWorld"])
+    "HelloWorld"]);
