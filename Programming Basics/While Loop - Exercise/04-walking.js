@@ -1,11 +1,14 @@
 function walking(input) {
 
     let index = 0;
+    let steps = 0;
     let totalSteps = 0;
 
     while (input[index] !== 'Going home') {
-        let steps = Number(input[index]);
+
+        steps = Number(input[index]);
         totalSteps += steps;
+
         if (totalSteps >= 10000) {
             let stepsOver = totalSteps - 10000;
             console.log(`Goal reached! Good job!`);
