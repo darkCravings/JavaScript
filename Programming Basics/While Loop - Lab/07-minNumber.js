@@ -1,14 +1,15 @@
 function minNumber(input) {
 
-    let i = 0;
     let min = Number(input.shift());
+    let index = 0;
+    let number = 0;
 
-    while (input[i] !== 'Stop') {
-        let number = Number(input[i]);
+    while (input[index] !== 'Stop') {
+        number = Number(input[index]);
         if (number < min) {
             min = number;
         }
-        i++;
+        index++;
     }
     console.log(min);
 }
@@ -17,4 +18,4 @@ minNumber(["100",
     "99",
     "80",
     "70",
-    "Stop"])
+    "Stop"]);
