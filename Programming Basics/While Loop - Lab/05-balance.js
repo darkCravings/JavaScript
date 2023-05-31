@@ -2,9 +2,11 @@ function balance(input) {
 
     let i = 0;
     let totalSum = 0;
+    let increase = input[i];
 
     while (input[i] !== 'NoMoreMoney') {
-        let increase = Number(input[i]);
+        increase = Number(input[i]);
+        i++;
 
         if (increase < 0) {
             console.log(`Invalid operation!`);
@@ -13,7 +15,6 @@ function balance(input) {
 
         console.log(`Increase: ${increase.toFixed(2)}`);
         totalSum += increase;
-        i++;
     }
     console.log(`Total: ${totalSum.toFixed(2)}`);
 }
