@@ -1,4 +1,3 @@
-
 function cinema(input) {
 
     let project = input[0];
